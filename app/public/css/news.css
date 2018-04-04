@@ -1,0 +1,17 @@
+.news-view{
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0 auto;
+} 
+.view{
+    background: #ccc;
+
+}
+.item{
+    font-size: 18px;
+    color: blueviolet;
+}
+
+.item a{
+    color: blueviolet;
+}
