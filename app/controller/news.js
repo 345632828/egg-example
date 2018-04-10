@@ -3,6 +3,7 @@ const Controller = require('egg').Controller;
 
 class NewsController extends Controller {
   async list() {
+    //const result = await this.app.mysql.insert('runoob_tbl', { runoob_title: 'Hello World' });
     const dataList = {
       list: [
         { id: 1, title: 'this is news 1', url: '/news/1' },
