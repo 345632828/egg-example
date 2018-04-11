@@ -37,7 +37,12 @@ module.exports = appInfo => {
 
 
   // add your config here
-  config.middleware = [];
+  exports.middleware = ['robot'];
+  exports.robot = {
+    ua: [
+      /Baiduspider/i,
+    ]
+  };
 
   return config;
 };
