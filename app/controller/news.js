@@ -6,8 +6,8 @@ class NewsController extends Controller {
     //const result = await this.app.mysql.insert('runoob_tbl', { runoob_title: 'Hello World' });
     const dataList = {
       list: [
-        { id: 1, title: 'this is news 1', url: '/news/1',time:"2014-08-12 09:25:24 " },
-        { id: 2, title: 'this is news 2', url: '/news/2',time:"2014-08-12 09:25:24 "}
+        { id: 1, title: 'this is news 1', url: '/news/1',time:1523999484 },
+        { id: 2, title: 'this is news 2', url: '/news/2',time:1523429484}
       ]
     };
     await this.ctx.render('news/list.tpl', dataList);
