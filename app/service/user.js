@@ -8,11 +8,7 @@ class UserService extends Service {
         //     runoob_title: 'Hello World',
         //     runoob_author: '王五',
         //     submission_date: new Date(new Date().getTime() + 28800000)
-        // });
-
-        let id2 = await this.app.mysql.get('runoob_tbl',{runoob_id:6});
-        console.log('id2',id2)
-        
+        // });        
             const row = {                
                 runoob_title: 'Hello World',
                 runoob_author: '小天一',
@@ -21,7 +17,7 @@ class UserService extends Service {
 
             const options = {
                 where: {
-                    runoob_id: 7
+                    runoob_id: 3
                 }
               };
             const result = await this.app.mysql.update('runoob_tbl', row,options);
@@ -30,10 +26,16 @@ class UserService extends Service {
 
         console.log('uid:' + uid)
 
+        if(uid > 3 ){
+            uid =3
+        }
+        let id2 = await this.app.mysql.get('runoob_tbl',{runoob_id:uid});
+        console.log('id2',id2)
+
         const user = await this.app.mysql.select('runoob_tbl');
 
         return {
-            user
+            id2
         };
     }
 }
