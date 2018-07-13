@@ -1,7 +1,7 @@
 <!-- app/view/news/list.tpl -->
 <html>
   <head>
-    <title>Hacker News show add</title>
+    <title>Hacker News opp</title>
     <link rel="stylesheet" href="/public/css/news.css" />
   </head>
   <body>
